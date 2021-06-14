@@ -1,0 +1,51 @@
+.hrms_actions{
+        ul{
+            list-style: none;
+        }
+}
+
+
+.hrms_breadcrumb{
+    .breadcrumb{
+        background:none;
+        .breadcrumb-item {
+            &.active{
+                color :$color--primary;
+                font-weight:500;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.box-shadow {
+    box-shadow: 0 4px 24px -15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box-shadow-two {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
+  }
+  
+  .box-radius {
+    border-radius: 5px;
+  }
+  
+  .box-padding {
+    padding: 18px;
+  }
+  
+  .box-border {
+    border: 2px solid #F2F2F2;
+  }
+  
+  .icon-radius {
+    border-radius: 10px;
+  }
+  

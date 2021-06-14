@@ -1,0 +1,244 @@
+{
+  "master_status_code": {
+    "error": "Something went wrong!",
+    "format_refused": "Format not accepted",
+    "invalid_duration": "Invalid duration",
+    "qc_failed": "Quality Control Failed",
+    "source_missing": "Missing sources",
+    "silent_tracks": "Silent tracks",
+    "warning": "Warning"
+  },
+  "distributions_messages": {
+    "already_distributed": "The master {master_name} has already been distributed to {distributed_to} by {distributed_by}."
+  },
+
+  "http_not_found": {
+    "generic": "Generic not found error.",
+    "invitation_token": "Invitation token is not valid.",
+    "no_distribution": "No distribution associated with the provided master have been found.",
+    "no_email": "Cannot find a corresponding email address.",
+    "no_new_token": "Not able to generate token.",
+    "no_user": "Cannot find any user corresponding."
+  },
+  "http_unauthorized": {
+    "account_permission": "Account does not have the required permission.",
+    "data_restriction": "Requested data does not belong to the account logged.",
+    "cant_authenticate": "Request cannot be authenticated.",
+    "invalid_credentials": "Credentials are invalid.",
+    "invalid_token": "Invalid token.",
+    "user_account": "User does not have access to that account.",
+    "user_no_account": "Linked to no account.",
+    "user_permission": "User does not have the required permission."
+  },
+  "validation_problem": {
+    "alphanumeric": "Only alphanumeric characters are allowed.",
+    "array": "Value has to be an array.",
+    "array_content": "The content of the array is not valid.",
+    "boolean": "Value has to be a boolean",
+    "date": "Field should be a date.",
+    "email": "Field has to be an email address.",
+    "numeric": "This field needs to be a number.",
+    "required": "Field is required.",
+    "string": "Field should be a string.",
+    "max_25_chars": "Field should not be more than 25 characters long.",
+    "max_50_chars": "Field should not be more than 50 characters long.",
+    "distribution_types_mixed": "You cannot distribute radio master with other types of masters.",
+    "distribution_one_item": "You have to specify at least a master file or a document.",
+    "master_language_master_type": "Language is not supported for the selected master type.",
+    "master_type": "Master type should be one of: PUB_TV_WEB, PUB_WEB, PUB_RADIO.",
+    "master_audio_type": "Audio type should be one of: 2trks, 8trks.",
+    "master_ratio": "Ratio should be one of : 16:9, 1:1, 2:3, 4:5, 9:16.",
+    "master_ratio_tv": "Ratio has to be 16:9 for TV masters.",
+    "master_audio_type_2trks": "Audio type should be 2trks for Web and Radio masters.",
+    "master_unique_id_used": "This ID is already used in our system.",
+    "master_unique_id_retained": "This ID had already been distributed, you cannot use it anymore.",
+    "master_captions_required": "Captions filename is required for master type PUB_TV_WEB.",
+    "recaptcha": "Captcha response is invalid.",
+    "supported_lang": "Language has to be one of: en, fr."
+  },
+  "outputs": {
+    "MXF1080_V2": {
+      "label": "MXF Standard",
+      "description": "This master has the exact length, no pre-roll, slate or post-roll.<br/>Time code starts at 10:00:00;00<br/>For stereo content the audio track layout is : <br/>[L][R][*][*][*][*][L][R]<br/>For surround content the audio track layout is :<br/>[L][R][C][LFE][Ls][Rs][Lt][Rt]"
+    },
+    "SLATE_XML_V2": {
+      "label": "XML Standard",
+      "description": "For Broadcasters, programmatic slate for the master « STANDARD »"
+    },
+    "MXF1080_SLATED": {
+      "label": "MXF Standard Slated",
+      "description": "This master has a video slate, a 2 second beep and 2 seconds of post-roll.<br/>Time code starts at 10:00:00;00<br>For stereo content the audio track layout is : <br/>[L][R][*][*][*][*][L][R]<br/>For surround content the audio track layout is :<br/>[L][R][C][LFE][Ls][Rs][Lt][Rt]"
+    },
+    "SLATE_XML_SLATED_V2": {
+      "label": "XML Standard Slated",
+      "description": "For Broadcasters, programmatic slate for the master « STANDARD SLATED »"
+    },
+    "MXF1080_CUSTOM1": {
+      "label": "MXF Custom 1",
+      "description": "This master has a 5 seconds video slate followed by a 2 seconds black and a 2 seconds post-roll.<br/>Time code starts at 00:00:00;00<br/>For stereo content the audio track layout is : <br/>[L][R]<br/>For surround content the audio track layout is :<br/>[Lt][Rt][L][R][C][LFE][Ls][Rs]"
+    },
+    "SLATE_XML_CUSTOM1": {
+      "label": "XML Custom 1",
+      "description": "For Broadcasters, programmatic slate for the master « Custom 1 »"
+    },
+    "MXF1080_CUSTOM3": {
+      "label": "MXF Custom 3",
+      "description": "This MXF master has a 5 seconds video slate and a 2 seconds black<br/> time code starts at 00:00:00;00<br/>For stereo content the audio track layout is : <br/>[L][R][*][*][*][*][L][R]<br/>For surround content the audio track layout is :<br/>[L][R][C][LFE][Ls][Rs][Lt][Rt]"
+    },
+    "SLATE_XML_CUSTOM3": {
+      "label": "XML Custom 3",
+      "description": "For Broadcasters, programmatic slate for the master « Custom 3 »"
+    },
+    "MXF1080_CUSTOM5": {
+      "label": "MXF Custom 5",
+      "description": "This MXF master has a 5 seconds video slate, a 2 seconds black and 2 seconds post-roll.<br/>Time code starts at 00:00:00;00<br/>For stereo content the audio track layout is : <br/>[L][R]<br/>For surround content the audio track layout is :<br/>[L][R][C][LFE][Ls][Rs][Lt][Rt]"
+    },
+    "SLATE_XML_CUSTOM5": {
+      "label": "XML Custom 5",
+      "description": "For Broadcasters, programmatic slate for the master « Custom 5 »"
+    },
+    "MXF1080_CUSTOM6": {
+      "label": "MXF Custom 6",
+      "description": "This master has a 10 frame pre-roll and post-roll<br/>Time code starts at 00:59:59;20<br>For stereo content the audio track layout is : <br/>[L][R]<br/>For surround content the audio track layout is :<br/>[Lt][Rt][L][R][C][LFE][Ls][Rs]"
+    },
+    "SLATE_XML_CUSTOM6": {
+      "label": "XML Custom 6",
+      "description": "For Broadcasters, programmatic slate for the master « Custom 6 »"
+    },
+    "MXF1080_DF_DURATION": {
+      "label": "MXF DF Duration",
+      "description": "This master has a reformatted duration for drop frame playlists. A 30 seconds spot equal 899 frames. No pre-roll, slate or post-roll.<br/>Time code starts at 00:00:00;00<br>For stereo content the audio track layout is : <br/>[L][R][*][*][*][*][L][R]<br/>For surround content the audio track layout is :<br/>[L][R][C][LFE][Ls][Rs][Lt][Rt]"
+    },
+    "TVC_HD": {
+      "label": "MPEG_PS HD",
+      "description": "This master has the exact length, no pre-roll, slate or post-roll.<br/>Time code starts at 00:00:00;00<br/>Always stereo, the audio track layout is : <br/>[L,R]<br/>1920x1080i, 608 and 708 Closed captions."
+    },
+    "SLATE_XML_TVC_HD": {
+      "label": "XML MPEG_PS HD",
+      "description": "For Broadcasters, programmatic slate for the master « MPEG_PS HD »"
+    },
+    "TVC_SD": {
+      "label": "MPEG_PS SD",
+      "description": "This master has the exact length, no pre-roll, slate or post-roll.<br/>Time code starts at 00:00:00;00<br/>Always stereo, the audio track layout is : <br/>[L,R]<br/>720x480p, 608 and 708 Closed captions."
+    },
+    "SLATE_XML_TVC_SD": {
+      "label": "XML MPEG_PS SD",
+      "description": "For Broadcasters, programmatic slate for the master « MPEG_PS SD »"
+    },
+    "PRORES1080_CUSTOM7": {
+      "label": "ProRes 422HQ Multichannel",
+      "description": "This master is a copy of the source with multichannel audio streams.<br>For stereo master track 1 is : [L,R]<br>and for surround master track 1 is : [L,R,C,LFE,Ls,Rs] and track 2 is : [L,R]<br>Captions are embedded when available"
+    },
+    "SLATE_XML_CUSTOM7": {
+      "label": "XML ProRes 422HQ Multichannel",
+      "description": "Programmatic slate for « ProRes 422HQ Multichannel »"
+    },
+    "MP41080": {
+      "label": "MOV 1080",
+      "description": "High resolution of the broadcast master"
+    },
+    "MP41080_SLATE": {
+      "label": "MOV 1080 Slated",
+      "description": "High resolution of the slated broadcast master"
+    },
+    "MP4540": {
+      "label": "MOV 540",
+      "description": "Low resolution of the broadcast master"
+    },
+    "MP4540_SLATE": {
+      "label": "MOV 540 Slated",
+      "description": "Low resolution of the slated broadcast master"
+    },
+    "MP4720": {
+      "label": "MOV 720",
+      "description": "Medium resolution of the broadcast master"
+    },
+    "MP4720_SLATE": {
+      "label": "MOV 720 Slated",
+      "description": "Medium resolution of the slated broadcast master"
+    },
+    "MP4_CUSTOM1": {
+      "label": "MP4 Custom 1",
+      "description": "This is a high resolution of the source master, the sound is always stereo and the loudness level is -24LKFS.,"
+    },
+    "WEBM1080": {
+      "label": "WEBM 1080 FS",
+      "description": "High resolution of the broadcast master. This format is used by web integrators"
+    },
+    "MP4360_LOUD": {
+      "label": "MP4 360 FS",
+      "description": "For online video services who don’t accept the HD version. This is a small version with 360 pixels in height and with a low data rate. The audio track is normalized to the web level standard"
+    },
+    "MP4720_LOUD": {
+      "label": "MP4 720 FS",
+      "description": "For online video services who don’t accept the HD version. This is a medium version with 720 pixels in height and with a medium data rate. The audio track is normalized to the web level standard"
+    },
+    "MP4720_LO_LOUD": {
+      "label": "MP4 720 FS Lo",
+      "description": "For online video services who don’t accept the HD version. This is a medium version with 720 pixels in height and with a low data rate. The audio track is normalized to the web level standard"
+    },
+    "MP41080_LOUD": {
+      "label": "MP4 1080 FS",
+      "description": "For Facebook, Youtube, Vimeo and other online video platform. The audio track is normalized to the web level standard"
+    },
+    "MP41080_LOUD_SUB": {
+      "label": "MP4 1080 FS+Subtitles",
+      "description": "Subtitles have been printed on the video. For Facebook, Youtube, Vimeo and other online video platform. The audio track is normalized to the web level standard"
+    },
+    "SRT_CAPTIONS_CC": {
+      "label": "SRT Captions",
+      "description": "Use this file with one of the above mp4 to get closed captions on Facebook, Youtube and other online video platform"
+    },
+    "MCC_CC": {
+      "label": "MCC",
+      "description": "Broadcasting caption format"
+    },
+    "SCC_CC": {
+      "label": "SCC @ 10h",
+      "description": "Broadcasting caption format"
+    },
+    "SRT_CC": {
+      "label": "SRT",
+      "description": "Human readable caption format"
+    },
+    "WEBVTT_CC": {
+      "label": "WEBVTT",
+      "description": "HTML5 caption format"
+    },
+    "SCC_OFFSET_CC": {
+      "label": "SCC @ 00h",
+      "description": "Broadcasting caption format with starting timecode at 00:00:00;00"
+    },
+    "RADIO_MP3_320": {
+      "label": "MP3",
+      "description": "High resolution version at 320 kbps stereo, used by most radio stations. Slate information is also added in the metadata."
+    },
+    "SOURCE": {
+      "label": "Master source",
+      "description": "Master source"
+    }
+  },
+  "admin": {
+    "navigation_menu": {
+      "playlist": "Playlist"
+    },
+    "master_types": {
+      "PUB_RADIO": "Radio",
+      "PUB_TV_WEB": "TV",
+      "PUB_WEB": "Web"
+    },
+    "audio_options": {
+      "stereo": "Stereo",
+      "surround": "Surround"
+    },
+    "masters": {
+      "already_distirbuted": "The master {main_master} has already been distributed to {distribution_name} by {account_name}"
+    }
+  },
+  "inputs": {
+    "isci_unique_id": "ISCI Code or Unique ID"
+  },
+  "buttons": {
+    "validate": "Validate"
+  }
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Poppins:400,500,600,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Segoe UI", 'sans-serif';
+    color: $color--secondary;
+}
+
+
+h4,
+h5 {
+    color: $color--secondary;
+    font-weight: 500;
+
+    &.regular {
+        font-weight: 400;
+    }
+}
+
+h1 {
+    font-size: calc(45px + 26 * ((100vw - 576px)/ 1024));
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: -0.88px;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: -0.68px;
+    font-size: calc(30px + 14 * ((100vw - 576px)/ 1024));
+    line-height: 1.05;
+
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: bold;
+    letter-spacing: -0.58px;
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -0.49px;
+
+    &.thin {
+        font-weight: 400 !important;
+    }
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.35px;
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1.12px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s ease-in;
+    font-size: 15px;
+
+    &:hover {
+        text-decoration: none;
+        color: $color--primary;
+    }
+
+    i {
+        &.item-action {
+            color: $color--text3;
+        }
+    }
+
+    &[aria-expanded="true"] {
+        i {
+            color: $color--primary;
+        }
+
+    }
+
+}
+
+p {
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Segoe UI", 'sans-serif';
+    color: $color--secondary;
+    &.lead {
+        font-size: 20px;
+        line-height: 31px;
+        font-weight: 400;
+    }
+
+    &.thin {
+        font-weight: 300;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.field_validation_error {
+        font-size: 13px !important;
+        margin: 5px 0 !important;
+        padding-left: 9px;
+        color: $color--error;
+        display: none;
+    }
+
+    &.grid-item-title {
+        font-family: "Segoe UI", 'sans-serif';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: $color--secondary;
+        margin: 0;
+    }
+
+    &.grid-item-slate {
+        font-size: 13px !important;
+        color: #33334F;
+        line-height: 20px;
+        font-family: "Segoe UI", 'sans-serif';
+    }
+
+    &.grid-item-data {
+        font-family: "Segoe UI", 'sans-serif';
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+
+        i {
+            font-size: 12px;
+            vertical-align: middle;
+            height: 10px;
+        }
+    }
+
+    &.validation-problem {
+        font-size: 14px !important;
+        color: $color--error;
+        margin-bottom: 0;
+        margin: 5px 0 !important;
+        line-height: initial;
+    }
+
+    letter-spacing: -0.33px;
+}
+
+a {
+    letter-spacing: -0.38px;
+}
